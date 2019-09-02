@@ -1,6 +1,8 @@
 package classes;
 
 
+import sun.awt.SunHints;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -19,6 +21,12 @@ public class Pessoa {
         this.idade = idade;
     }
 
+    public Pessoa criarPessoaAleatória( int p){
+        Pessoa pessoa = new Pessoa();
+        pessoa.setNome("Pessoa" + p);
+        pessoa.setIdade(random.nextInt(40));
+        return pessoa;
+    }
     public String getNome(){
         return nome;
     }

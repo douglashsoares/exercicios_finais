@@ -29,8 +29,7 @@ public class Exercicio3 extends ExercicioBase{
 //            pessoaAle[i] = nomeDoMetodoDeCriarPessoa(i);
             // remova as linhas de baixo
             pessoaAle[i] = new Pessoa();
-            pessoaAle[i].setNome("Pessoa" + i);
-            pessoaAle[i].setIdade(random.nextInt(40));
+            pessoaAle[i].criarPessoaAleatória(i);
         }
         for (int i = 0;i < quantP; i++){
             pessoaAle[i].status();
