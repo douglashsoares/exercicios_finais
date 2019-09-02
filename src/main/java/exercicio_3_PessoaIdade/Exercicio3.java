@@ -7,6 +7,13 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Exercicio3 extends ExercicioBase{
+
+
+    // criar metodo retornando uma pessoa e com 1 parametro
+    // parametro: i
+    // instancia a pessoa, cria o nome dela e idade
+    // e retorne a pessoa
+
     @Override
     public void iniciarExercicio() {
         Random random = new Random();
@@ -20,6 +27,8 @@ public class Exercicio3 extends ExercicioBase{
 
 
         for (int i = 0; i < quantP; i++){
+//            pessoaAle[i] = nomeDoMetodoDeCriarPessoa(i);
+            // remova as linhas de baixo
             pessoaAle[i] = new Pessoa();
             pessoaAle[i].setNome("Pessoa" + i);
             pessoaAle[i].setIdade(random.nextInt(40));
@@ -27,29 +36,6 @@ public class Exercicio3 extends ExercicioBase{
         for (int i = 0;i < quantP; i++){
             pessoaAle[i].status();
         }
-
-
-
-
-
-
-
-//        String pessoaAle[] = new String[quantP];
-//        int idadeAle[] = new int[quantP];
-//
-//        for (int c = 0; c <  pessoaAle.length; c++){
-//            pessoaAle[c] = "Pessoa" + 1;
-//
-//        }
-//        for (int i =0; i < idadeAle.length; i++){
-//            idadeAle[i] = random.nextInt(40);
-//        }
-//
-//        for(int i = 0; i < pessoaAle.length; i++) {
-//            Pessoa p1 = new Pessoa(pessoaAle[i], idadeAle[i]);
-//            p1.ehMaiorIdade();
-//            p1.status();
-//        }
 
 
     }

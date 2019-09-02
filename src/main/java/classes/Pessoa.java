@@ -35,6 +35,7 @@ public class Pessoa {
     public boolean ehMaiorIdade(){
         return idade >= 18;
     }
+    
     public void status(){
         System.out.println("------------------------------------");
         System.out.println("O seu nome é "+this.getNome());
