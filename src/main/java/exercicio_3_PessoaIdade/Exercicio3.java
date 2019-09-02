@@ -23,8 +23,7 @@ public class Exercicio3 extends ExercicioBase{
         System.out.println("Digite a quantidade de pessoas: ");
         int quantP = teclado.nextInt();
 
-        Pessoa pessoaAle[] = new Pessoa[quantP];
-
+        Pessoa[] pessoaAle = new Pessoa[quantP];
 
         for (int i = 0; i < quantP; i++){
 //            pessoaAle[i] = nomeDoMetodoDeCriarPessoa(i);
