@@ -8,17 +8,15 @@ import java.util.Scanner;
 
 public class Exercicio3 extends ExercicioBase{
 
+    private Random random = new Random();
+    private Scanner teclado = new Scanner(System.in);
 
     // criar metodo retornando uma pessoa e com 1 parametro
     // parametro: i
     // instancia a pessoa, cria o nome dela e idade
-    // e retorne a pessoa
 
     @Override
     public void iniciarExercicio() {
-        Random random = new Random();
-        Scanner teclado = new Scanner(System.in);
-
 
         System.out.println("Digite a quantidade de pessoas: ");
         int quantP = teclado.nextInt();
@@ -38,4 +36,5 @@ public class Exercicio3 extends ExercicioBase{
 
 
     }
+    // e retorne a pessoa
 }
