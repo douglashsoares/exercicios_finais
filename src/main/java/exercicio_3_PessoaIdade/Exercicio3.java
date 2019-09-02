@@ -12,7 +12,7 @@ public class Exercicio3 extends ExercicioBase{
         Random random = new Random();
         Scanner teclado = new Scanner(System.in);
 
-        System.out.println("Digite a quantidade de pessoas: ");
+        System.out.println("Digite a quantidade de pessoas : ");
         int quantP = teclado.nextInt();
 
 
