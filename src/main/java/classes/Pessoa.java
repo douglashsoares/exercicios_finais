@@ -52,8 +52,10 @@ public class Pessoa {
         return idade >= 18;
     }
     public void status(){
+        System.out.println("------------------------------------");
         System.out.println("O seu nome é "+this.getNome());
         System.out.println("A sua idade é "+this.getIdade());
+        System.out.println("É maior de idade? "+this.ehMaiorIdade());
 
     }
 
