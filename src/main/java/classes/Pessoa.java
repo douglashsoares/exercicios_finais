@@ -8,28 +8,12 @@ public class Pessoa {
     private String nome;
     private int idade ;
 
-    String pessoasAle[] = new String[5];
-    int idadeAle[] = new int[5];
+    public  Pessoa(){
 
-
-
-
+    }
     public Pessoa(String nome, int idade) {
         this.nome = nome;
         this.idade = idade;
-    }
-    /*public void pessoas(){
-          for (int i = 0; i < pessoasAle.length; i++){
-              return pessoasAle(i);
-              pessoasAle[i] = "Pessoa" + 1;
-
-          }
-    }*/
-    public void idades(){
-        for (int i = 0; i<idadeAle.length;i++ ){
-            idadeAle[i] = random.nextInt(40);
-            System.out.println(idadeAle);
-        }
     }
 
     public String getNome(){

@@ -12,15 +12,15 @@ public class Exercicio3 extends ExercicioBase{
         Random random = new Random();
         Scanner teclado = new Scanner(System.in);
 
+
         System.out.println("Digite a quantidade de pessoas: ");
         int quantP = teclado.nextInt();
 
+        Pessoa pessoaAle[] = new Pessoa[quantP];
 
-        // crie aqui vetor de pessoas
-        String pessoas[] = new String[5];
 
-        for (int i = 0; i < pessoas.length; i++){
-            pessoas[i] = "Pessoa" + 1;
+        for (int i = 0; i < 5; i++){
+            pessoaAle[i] = new Pessoa();
         }
 
 
