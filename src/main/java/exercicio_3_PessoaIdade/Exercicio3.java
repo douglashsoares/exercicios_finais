@@ -16,22 +16,33 @@ public class Exercicio3 extends ExercicioBase{
         int quantP = teclado.nextInt();
 
 
-        String pessoaAle[] = new String[quantP];
-        int idadeAle[] = new int[quantP];
+        // crie aqui vetor de pessoas
 
-        for (int c = 0; c <  pessoaAle.length; c++){
-            pessoaAle[c] = "Pessoa" + 1;
 
-        }
-        for (int i =0; i < idadeAle.length; i++){
-            idadeAle[i] = random.nextInt(40);
-        }
 
-        for(int i = 0; i < pessoaAle.length; i++) {
-            Pessoa p1 = new Pessoa(pessoaAle[i], idadeAle[i]);
-            p1.ehMaiorIdade();
-            p1.status();
-        }
+
+
+
+
+
+
+
+//        String pessoaAle[] = new String[quantP];
+//        int idadeAle[] = new int[quantP];
+//
+//        for (int c = 0; c <  pessoaAle.length; c++){
+//            pessoaAle[c] = "Pessoa" + 1;
+//
+//        }
+//        for (int i =0; i < idadeAle.length; i++){
+//            idadeAle[i] = random.nextInt(40);
+//        }
+//
+//        for(int i = 0; i < pessoaAle.length; i++) {
+//            Pessoa p1 = new Pessoa(pessoaAle[i], idadeAle[i]);
+//            p1.ehMaiorIdade();
+//            p1.status();
+//        }
 
 
     }
