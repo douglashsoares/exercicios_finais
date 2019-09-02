@@ -21,10 +21,11 @@ public class Exercicio3 extends ExercicioBase{
 
         for (int i = 0; i < quantP; i++){
             pessoaAle[i] = new Pessoa();
+            pessoaAle[i].setNome("Pessoa" + i);
+            pessoaAle[i].setIdade(random.nextInt(40));
         }
         for (int i = 0;i < quantP; i++){
-            pessoaAle[i].setNome("Pessoa" + 1);
-            pessoaAle[i].setIdade(random.nextInt(40));
+            pessoaAle[i].status();
         }
 
 
