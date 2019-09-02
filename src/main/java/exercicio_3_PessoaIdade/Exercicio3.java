@@ -19,8 +19,12 @@ public class Exercicio3 extends ExercicioBase{
         Pessoa pessoaAle[] = new Pessoa[quantP];
 
 
-        for (int i = 0; i < 5; i++){
+        for (int i = 0; i < quantP; i++){
             pessoaAle[i] = new Pessoa();
+        }
+        for (int i = 0;i < quantP; i++){
+            pessoaAle[i].setNome("Pessoa" + 1);
+            pessoaAle[i].setIdade(random.nextInt(40));
         }
 
 
