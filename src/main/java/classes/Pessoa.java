@@ -2,9 +2,12 @@ package classes;
 
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class Pessoa {
     Random random = new Random();
+    Scanner teclado = new Scanner(System.in);
+
     private String nome;
     private int idade ;
 
