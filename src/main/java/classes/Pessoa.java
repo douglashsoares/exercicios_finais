@@ -7,8 +7,6 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Pessoa {
-    Random random = new Random();
-    Scanner teclado = new Scanner(System.in);
 
     private String nome;
     private int idade ;
@@ -21,12 +19,6 @@ public class Pessoa {
         this.idade = idade;
     }
 
-    public Pessoa criarPessoaAleatória( int p){
-        Pessoa pessoa = new Pessoa();
-        pessoa.setNome("Pessoa" + p);
-        pessoa.setIdade(random.nextInt(40));
-        return pessoa;
-    }
     public String getNome(){
         return nome;
     }
