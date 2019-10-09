@@ -4,16 +4,20 @@ public abstract class Animal {
     //Atributos
     private int patas;
     private String tipo;
-    private boolean rugir;
+    private String rugir;
 
     //Metodo Abstrato
+    public void rugir() {
 
+    }
 
     //Metodos especiais
-    public void setPatas(int pa){
+
+    public void setPatas(int pa) {
         this.patas = pa;
     }
-    public int getPatas(){
+
+    public int getPatas() {
         return this.patas;
     }
 
@@ -25,13 +29,6 @@ public abstract class Animal {
         this.tipo = tipo;
     }
 
-    public boolean getRugir() {
-        return rugir;
-    }
-
-    public void setRugir(boolean rugir) {
-        this.rugir = rugir;
-    }
 }
 
 
