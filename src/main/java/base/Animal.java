@@ -2,14 +2,11 @@ package base;
 
 public abstract class Animal {
     //Atributos
-    private int patas;
-    private String tipo;
-    private String rugir;
+    protected int patas;
+    protected String nome;
 
     //Metodo Abstrato
-    public void rugir() {
-
-    }
+    public abstract void rugir();
 
     //Metodos especiais
 
@@ -21,12 +18,12 @@ public abstract class Animal {
         return this.patas;
     }
 
-    public String getTipo() {
-        return tipo;
+    public String getNome() {
+        return this.nome;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
 }

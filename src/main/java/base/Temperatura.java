@@ -1,8 +1,12 @@
 package base;
 
-public class Temperatura {
+import classes.Celsius;
+import classes.Fahrenheit;
+import classes.Kelvin;
+
+public abstract class Temperatura {
     //Atributo
-    public float valor;
+    protected float valor;
 
     public Temperatura(float valorTemp){
         this.valor = valorTemp;
@@ -10,25 +14,12 @@ public class Temperatura {
 
     //Metodos Abstratos
 
-    public void paraCelsio(){
-
-    }
-    public void paraFahreiheid(){
-
-    }
-    public void paraKelvin(){
-
-    }
-    public void mostrarCelsio(){
-
-    }
-    public void mostrarFahreiheid(){
-
-    }
-    public void mostrarKelvin(){
-
-    }
-
+    public abstract Celsius paraCelsio();
+    public abstract Fahrenheit paraFahrenheit();
+    public abstract Kelvin paraKelvin();
+    public abstract String mostrarCelsio();
+    public abstract String mostrarFahreiheid();
+    public abstract String mostrarKelvin();
 
     //Metodos Acessores
 
